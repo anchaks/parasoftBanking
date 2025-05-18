@@ -178,4 +178,29 @@ public class AccountsOverviewPageObjects
         logoutLnk.click();
      }
 
+     @FindBy(xpath="//h1[normalize-space()='Account Opened!']") WebElement accSuccessMsg;
+    @FindBy(xpath="//p[normalize-space()='Congratulations, your account is now open.']") WebElement accSuccessMsgFull;
+    @FindBy(xpath="//b[normalize-space()='Your new account number:']") WebElement txt1;
+    @FindBy(xpath="//a[@id='newAccountId']") WebElement newAccID;//new opened account
+
+    public String getAccSuccessMsg()
+    {
+        String t=accSuccessMsg.getText();
+        return t;
+    }
+
+    public String getAccSuccessMsgFull()
+    {
+        String t=accSuccessMsgFull.getText();
+        return t;
+    }
+
+    public String getNewAccountID()
+    {
+        String t=newAccID.getText();
+        return t;
+    }
+
+
+
 }

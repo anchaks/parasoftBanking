@@ -1,11 +1,14 @@
 package testClasses;
 
+//import java.util.List;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import baseClasses.BaseClass;
 import pageObjects.AccountsOverviewPageObjects;
 import pageObjects.HomePageObjects;
+//import utilities.ExcelUtils;
 
 
 public class TC_Login_Home_Page extends BaseClass
@@ -14,12 +17,12 @@ public class TC_Login_Home_Page extends BaseClass
     public void login()
     {
         HomePageObjects hpo=new HomePageObjects(driver);
-        hpo.enterCredentials("eka", "Test@123");
+        hpo.enterCredentials("swati", "Test@123");
         hpo.clickLogin();
 
-        AccountsOverviewPageObjects aop=new AccountsOverviewPageObjects(driver);
-        String actualText=aop.checkWelcomeMsg();
-        String fullMsg=aop.getFullMessage();
+        AccountsOverviewPageObjects aspo=new AccountsOverviewPageObjects(driver);
+        String actualText=aspo.checkWelcomeMsg();
+        String fullMsg=aspo.getFullMessage();
         System.out.println(fullMsg);
         if(actualText.equalsIgnoreCase("Welcome"))
         {
@@ -29,6 +32,15 @@ public class TC_Login_Home_Page extends BaseClass
         {
             Assert.fail("Login Unsuccessful. Test Case Failed");
         }
+        /*
+        System.out.println("the list of accounts for this customers and it details are:");
+
+        List<String> accountNumbers=aspo.getListOfAccounts();
+        List<String> accountBalances=aspo.getListOfBalanceinAccounts();
+        List<String> accountAvailableBalance=aspo.getListOfAvailableBalanceinAccounts();
+        // After retrieving account details
+        ExcelUtils.writeAccountDataToExcel("", accountNumbers, accountBalances, accountAvailableBalance);
+         */
     
     }
 

@@ -10,18 +10,11 @@
     <classes>
       <class name="testClasses.TC_Login_Home_Page">
         <methods>
-          <include name="TC_Login_Home_Page"/>
           <include name="setup"/>
+          <include name="login"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- testClasses.TC_Login_Home_Page -->
-      <class name="testClasses.TC_AccountsOverView">
-        <methods>
-          <include name="TC_AccountsOverview"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- testClasses.TC_AccountsOverView -->
     </classes>
   </test> <!-- ParaBank Functional Tests(failed) -->
 </suite> <!-- Failed suite [ParaBank Test Suite] -->

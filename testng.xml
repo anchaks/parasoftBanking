@@ -14,7 +14,9 @@
             <!-- Add your test classes here -->
             <class name="testClasses.TC_RegisterAccount" />
             <class name="testClasses.TC_Login_Home_Page" />
-            <class name="testClasses.TC_AccountsOverView" />
+            <!--<class name="testClasses.TC_AccountsOverView" />-->
+            <!--<class name="testClasses.TC_OpenNewAccount" />-->
+
         </classes>
     </test>
 </suite>

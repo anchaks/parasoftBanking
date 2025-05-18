@@ -23,4 +23,11 @@ public class RegistrationSuccess
         return text;
     }
 
+    @FindBy(xpath="//a[normalize-space()='Accounts Overview']") WebElement accOverViewLnk;
+
+     public void clickaccountOverView()
+     {
+        accOverViewLnk.click();
+     }
+
 }
