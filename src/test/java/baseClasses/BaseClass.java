@@ -41,7 +41,7 @@ public class BaseClass
 		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
 		File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
-		String targetFilePath="/Users/arnab/Desktop/Programming_Projects/VSCodeProjects/parabanking_project/src/screenshots/" + tname + "_" + timeStamp + ".jpg";
+		String targetFilePath="/Users/arnab/Desktop/Programming_Projects/VSCodeProjects/parabanking_project/screenshots/" + tname + "_" + timeStamp + ".jpg";
 		File targetFile=new File(targetFilePath);
 		sourceFile.renameTo(targetFile);
 		return targetFilePath;
