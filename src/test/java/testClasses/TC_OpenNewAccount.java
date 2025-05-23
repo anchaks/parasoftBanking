@@ -51,12 +51,25 @@ public class TC_OpenNewAccount extends BaseClass
 
         // Step 2: Read existing account numbers from the Excel sheet
         //String excelFilePath = System.getProperty("user.dir") + "/test-output/excel/UserAccountCreated.xlsx";
-        String excelFilePath =  "/Users/arnab/Desktop/Programming_Projects/VSCodeProjects/parabanking_project/src/test_output/generatedexcelsheets/UserAccountCreated.xlsx";
+        String excelFilePath =  "D:\\VSCodeProjects\\parasoftBanking\\parasoftBanking\\generatedexcelsheets\\UserAccountCreated_.xlsx";
+        //String excelFilePath =  "D:\VSCodeProjects\parasoftBanking\parasoftBanking\generatedexcelsheets\UpdatedUserAccountDetails_.xlsx";
         List<String> accountNumbers = ExcelUtils.readAccountNumbersFromExcel(excelFilePath);
+        
 
         if (accountNumbers.isEmpty()) {
             Assert.fail("No account numbers found in the Excel sheet.");
         }
+
+        /* 
+        // Define the specific account number to use
+        String acc_No = "16674";
+        // Check if the specific account number exists in Excel
+        if (!accountNumbers.contains(acc_No)) 
+        {
+            Assert.fail("Specified account number (" + acc_No + ") not found in the Excel sheet.");
+        }
+        
+        */
 
         // Step 3: Navigate to Open New Account page
         AccountsOverviewPageObjects apo = new AccountsOverviewPageObjects(driver);
@@ -65,8 +78,17 @@ public class TC_OpenNewAccount extends BaseClass
         OpenNewAccount opo = new OpenNewAccount(driver);
         opo.selectTypeOfAccount("SAVINGS");
 
-        // Step 4: Match Excel account numbers with dropdown options
+        // Step 4: Match Excel account numbers with dropdown options or check if entered account number exists in the dropdown
+        
         List<String> dropdownAccounts = opo.listAllAccounts();
+        
+        /* 
+        if (!dropdownAccounts.contains(acc_No)) 
+        {
+            Assert.fail("Specified account number (" + acc_No + ") not found in dropdown options.");
+        }
+        */
+
         String selectedAccount = null;
 
         for (String acc : accountNumbers) {
@@ -79,6 +101,11 @@ public class TC_OpenNewAccount extends BaseClass
         if (selectedAccount == null) {
             Assert.fail("No matching account number found in dropdown.");
         }
+
+        /* 
+        // If both checks passed, proceed to select the account and open a new one
+        opo.selectAccount(acc_No);
+        */
 
         opo.selectAccount(selectedAccount);
         opo.clickOpenNewAccountBtn();

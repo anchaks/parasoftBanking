@@ -35,7 +35,7 @@ public class ExtentReportManager implements ITestListener
 		*/
 		String timestamp=new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//timestamp
 		repName="test-Report-"+timestamp+".html";
-		sparkReporter =new ExtentSparkReporter("/Users/arnab/Desktop/Programming_Projects/VSCodeProjects/parabanking_project/src/test_output/"+repName);//specify location of the report
+		sparkReporter =new ExtentSparkReporter("D:\\VSCodeProjects\\parasoftBanking\\parasoftBanking\\test-output\\"+repName);//specify location of the report
 		sparkReporter.config().setDocumentTitle("Parabanking project");
 		sparkReporter.config().setReportName("Parabanking functional test");
 		sparkReporter.config().setTheme(Theme.DARK);

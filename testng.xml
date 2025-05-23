@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="ParaBank Test Suite" parallel="false">
+<suite name="ParaBank Sequential Test Suite" parallel="false">
 
     <!-- Listeners -->
     <listeners>
@@ -7,16 +7,31 @@
 	</listeners>
 
     <!-- Test Configuration -->
-    <test name="ParaBank Functional Tests">
-        <parameter name="os" value="macOS" />
+    <test name="ParaBank Functional Chrome Tests">
+        <!--<parameter name="os" value="macOS" />-->
         <parameter name="browser" value="chrome" />
         <classes>
             <!-- Add your test classes here -->
-            <class name="testClasses.TC_RegisterAccount" />
+            <!--<class name="testClasses.TC_RegisterAccount" />-->
             <class name="testClasses.TC_Login_Home_Page" />
             <!--<class name="testClasses.TC_AccountsOverView" />-->
             <!--<class name="testClasses.TC_OpenNewAccount" />-->
 
         </classes>
     </test>
+
+    <test name="ParaBank Functional Edge Tests">
+        <!--<parameter name="os" value="macOS" />-->
+        <parameter name="browser" value="edge" />
+        <classes>
+            <!-- Add your test classes here -->
+            <!--<class name="testClasses.TC_RegisterAccount" />-->
+            <class name="testClasses.TC_Login_Home_Page" />
+            <!--<class name="testClasses.TC_AccountsOverView" />-->
+            <!--<class name="testClasses.TC_OpenNewAccount" />-->
+
+        </classes>
+    </test>
+
+
 </suite>

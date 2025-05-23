@@ -1,0 +1,17 @@
+D:\VSCodeProjects\parasoftBanking\parasoftBanking\src\test\java\baseClasses\BaseClass.java
+D:\VSCodeProjects\parasoftBanking\parasoftBanking\src\test\java\pageObjects\AccountsOverviewPageObjects.java
+D:\VSCodeProjects\parasoftBanking\parasoftBanking\src\test\java\pageObjects\HomePageObjects.java
+D:\VSCodeProjects\parasoftBanking\parasoftBanking\src\test\java\pageObjects\OpenNewAccount.java
+D:\VSCodeProjects\parasoftBanking\parasoftBanking\src\test\java\pageObjects\OpenNewAccountSuccess.java
+D:\VSCodeProjects\parasoftBanking\parasoftBanking\src\test\java\pageObjects\RegisterPageObjects.java
+D:\VSCodeProjects\parasoftBanking\parasoftBanking\src\test\java\pageObjects\RegistrationSuccess.java
+D:\VSCodeProjects\parasoftBanking\parasoftBanking\src\test\java\pageObjects\UpdateContactInfo.java
+D:\VSCodeProjects\parasoftBanking\parasoftBanking\src\test\java\testClasses\TC_AccountsOverView.java
+D:\VSCodeProjects\parasoftBanking\parasoftBanking\src\test\java\testClasses\TC_Login_fail.java
+D:\VSCodeProjects\parasoftBanking\parasoftBanking\src\test\java\testClasses\TC_Login_Home_Page.java
+D:\VSCodeProjects\parasoftBanking\parasoftBanking\src\test\java\testClasses\TC_OpenNewAccount.java
+D:\VSCodeProjects\parasoftBanking\parasoftBanking\src\test\java\testClasses\TC_RegisterAccount.java
+D:\VSCodeProjects\parasoftBanking\parasoftBanking\src\test\java\testClasses\TC_UpdateContactDetails.java
+D:\VSCodeProjects\parasoftBanking\parasoftBanking\src\test\java\utilities\ExcelUtils.java
+D:\VSCodeProjects\parasoftBanking\parasoftBanking\src\test\java\utilities\ExtentReportManager.java
+D:\VSCodeProjects\parasoftBanking\parasoftBanking\src\test\java\utilities\TakeScreenshot.java

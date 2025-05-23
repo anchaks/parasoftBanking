@@ -1,0 +1,17 @@
+testClasses\TC_Login_Home_Page.class
+pageObjects\AccountsOverviewPageObjects.class
+testClasses\TC_OpenNewAccount.class
+testClasses\TC_RegisterAccount.class
+pageObjects\RegistrationSuccess.class
+pageObjects\UpdateContactInfo.class
+testClasses\TC_UpdateContactDetails.class
+pageObjects\RegisterPageObjects.class
+baseClasses\BaseClass.class
+utilities\ExcelUtils.class
+testClasses\TC_Login_fail.class
+utilities\ExtentReportManager.class
+testClasses\TC_AccountsOverView.class
+pageObjects\HomePageObjects.class
+pageObjects\OpenNewAccountSuccess.class
+pageObjects\OpenNewAccount.class
+utilities\TakeScreenshot.class

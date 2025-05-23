@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-23T12:33:56 IST" name="ParaBank Sequential Test Suite" finished-at="2025-05-23T12:34:33 IST" duration-ms="37252">
+    <groups>
+    </groups>
+    <test started-at="2025-05-23T12:33:56 IST" name="ParaBank Functional Chrome Tests" finished-at="2025-05-23T12:34:09 IST" duration-ms="12881">
+      <class name="testClasses.TC_Login_Home_Page">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testClasses.TC_Login_Home_Page@436813f3]" started-at="2025-05-23T12:33:56 IST" name="setup" finished-at="2025-05-23T12:34:06 IST" duration-ms="10020" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login()[pri:0, instance:testClasses.TC_Login_Home_Page@436813f3]" started-at="2025-05-23T12:34:06 IST" name="login" finished-at="2025-05-23T12:34:08 IST" duration-ms="2318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testClasses.TC_Login_Home_Page@436813f3]" started-at="2025-05-23T12:34:09 IST" name="tearDown" finished-at="2025-05-23T12:34:09 IST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testClasses.TC_Login_Home_Page -->
+    </test> <!-- ParaBank Functional Chrome Tests -->
+    <test started-at="2025-05-23T12:34:09 IST" name="ParaBank Functional Edge Tests" finished-at="2025-05-23T12:34:33 IST" duration-ms="24090">
+      <class name="testClasses.TC_Login_Home_Page">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testClasses.TC_Login_Home_Page@4562e04d]" started-at="2025-05-23T12:34:09 IST" name="setup" finished-at="2025-05-23T12:34:30 IST" duration-ms="20699" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login()[pri:0, instance:testClasses.TC_Login_Home_Page@4562e04d]" started-at="2025-05-23T12:34:30 IST" name="login" finished-at="2025-05-23T12:34:32 IST" duration-ms="1979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testClasses.TC_Login_Home_Page@4562e04d]" started-at="2025-05-23T12:34:32 IST" name="tearDown" finished-at="2025-05-23T12:34:33 IST" duration-ms="1263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testClasses.TC_Login_Home_Page -->
+    </test> <!-- ParaBank Functional Edge Tests -->
+  </suite> <!-- ParaBank Sequential Test Suite -->
+</testng-results>
